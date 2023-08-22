@@ -62,7 +62,12 @@ let cardItems = [
   input.value = 0
   totalprice.innerHTML = parseInt(totalprice.innerHTML)
   totalprice.innerHTML = 0
-  var message = alert("your cart is now empty")
-  console.log(message)
+ main.innerHTML= "<h1> your cart is empty !! </h1> "
  })
  //hello
+ const heart = document.querySelector(".heart")
+ heart.addEventListener("click", function(e){
+   const ht = e.target
+   ht.classList.toggle("hearted")
+ })
+ 
